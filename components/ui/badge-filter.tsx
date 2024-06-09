@@ -24,6 +24,7 @@ export default function BadgeFilter() {
     cuisine: string
   ) => {
     e.preventDefault();
+    console.log(cuisine, "selected category");
     dispatch({
       type: "SELECTED_CUISINE",
       payload: {
